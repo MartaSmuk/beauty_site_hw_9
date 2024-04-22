@@ -334,6 +334,93 @@ a {
   text-decoration: none;
 }
 
+.content {
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #EFEFEF;
+}
+.content__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.content__phone {
+  color: black;
+  font-size: 16px;
+}
+.content__btn {
+  background-color: white;
+  width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  border: 2px solid #F13C6E;
+}
+
 .navbar {
   background-color: #EFEFEF;
+}
+.navbar__list {
+  display: flex;
+  gap: 15px;
+  padding: 17px;
+  justify-content: center;
+}
+.navbar__link {
+  color: black;
+}
+
+.site-nav {
+  padding: 30px 0;
+}
+.site-nav__list {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  justify-content: center;
+}
+.site-nav__item a {
+  color: black;
+}
+
+.super-chair {
+  background-image: url(../img/chair.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.super-chair__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 192px;
+  padding: 190px 0;
+}
+.super-chair__heading {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+.super-chair__description {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 53px;
+  width: 260px;
+}
+.super-chair__btn {
+  text-align: center;
+  margin-top: 40px;
+  width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #F13C6E;
+  color: white;
+  border: 2px solid white;
+  padding: 9px 0;
 }/*# sourceMappingURL=style.css.map */
