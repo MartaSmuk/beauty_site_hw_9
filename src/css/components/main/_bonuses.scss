@@ -1,0 +1,83 @@
+@use "../../partials" as *;
+
+.bonuses {
+    background-color: $color-primary;
+
+    &__wrap {
+        display: flex;
+        gap: $gap-small;
+    }
+    &__gifts {
+        display: flex;
+        padding: 36px;
+        background-color: #F13C6E;
+        gap: 95px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-medium;
+    }
+    &__title {
+        font-size: $font-size-large;
+        font-weight: $font-weight-large;
+        color: $color-secondary;
+
+    }
+    &__description {
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $color-secondary;
+        line-height: $line-height;
+    }
+
+    &__email {
+        background-color: $color-secondary;
+        margin-top: 18px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: 0;
+    }
+}
+
+.visit {
+    background-color: $border-primary-color;
+    display: flex;
+    gap: 95px;
+    padding: 36px;
+
+    &__wrap {
+        display: flex;
+        gap: $gap-small;
+        padding: 30px;
+        gap: 107px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-medium;
+    }
+    &__title {
+        font-size: $font-size-large;
+        font-weight: $font-weight-large;
+        color: $color-secondary;
+    }
+    &__description {
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $color-secondary;
+        width: 140px;
+        line-height: $line-height;
+    }
+
+    &__btn {
+        background-color: $border-primary-color;
+        border: 2px solid $color-secondary;
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: $color-secondary;
+        text-align: center;
+        font-weight: $font-weight;
+        margin-top: 15px;
+    }
+}

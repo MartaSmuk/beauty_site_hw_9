@@ -1,4 +1,5 @@
 @use "../../partials" as *;
+@use "../../mixins/" as *;
 
 .content {
     background-color: $color-secondary;
@@ -11,19 +12,12 @@
         align-items: center;
     }
     &__contacts {
-        display: flex;
-        align-items: center;
-        gap: 40px;
+        @include horizontal-flex-items;
     }
     &__phone {
-        color: $link-primary-color;
-        font-size: 16px;  
+        @include contact-phone;  
     }
     &__btn {
-        background-color: $color-secondary;
-        width: 170px;
-        height: 40px;
-        border-radius: 40px;
-        border: 2px solid $border-primary-color;
+        @include contact-button;
     }
 }
