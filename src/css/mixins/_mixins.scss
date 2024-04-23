@@ -49,3 +49,29 @@
     height: 45px;
 }
 
+@mixin flex-column-med {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+}
+
+@mixin bonus-section-title {
+    font-size: $font-size-large;
+    font-weight: $font-weight-large;
+    color: $color-secondary;
+}
+
+@mixin bonus-section-desc {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color-secondary;
+    line-height: $line-height;
+}
+
+@mixin bonus-section-layout {
+    background-color: $border-primary-color;
+    display: flex;
+    gap: 95px;
+    padding: 36px;
+}
+

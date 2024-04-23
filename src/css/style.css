@@ -342,7 +342,6 @@ a {
 .content__wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .content__contacts {
   display: flex;
@@ -473,10 +472,10 @@ a {
   gap: 20px;
 }
 .bonuses__gifts {
-  display: flex;
-  padding: 36px;
   background-color: #F13C6E;
+  display: flex;
   gap: 95px;
+  padding: 36px;
 }
 .bonuses__info {
   display: flex;
@@ -528,7 +527,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   color: white;
-  width: 140px;
   line-height: 20px;
 }
 .visit__btn {
@@ -649,7 +647,6 @@ a {
   text-align: center;
   margin-top: 40px;
   width: 170px;
-  height: 40px;
   border-radius: 40px;
   background-color: #F13C6E;
   color: white;

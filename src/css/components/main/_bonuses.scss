@@ -1,4 +1,5 @@
 @use "../../partials" as *;
+@use "../../mixins/" as *;
 
 .bonuses {
     background-color: $color-primary;
@@ -8,27 +9,18 @@
         gap: $gap-small;
     }
     &__gifts {
-        display: flex;
-        padding: 36px;
-        background-color: #F13C6E;
-        gap: 95px;
+        @include bonus-section-layout;
+        
     }
     &__info {
-        display: flex;
-        flex-direction: column;
-        gap: $gap-medium;
+        @include flex-column-med;
     }
     &__title {
-        font-size: $font-size-large;
-        font-weight: $font-weight-large;
-        color: $color-secondary;
+        @include bonus-section-title;
 
     }
     &__description {
-        font-size: $font-size;
-        font-weight: $font-weight;
-        color: $color-secondary;
-        line-height: $line-height;
+        @include bonus-section-desc;
     }
 
     &__email {
@@ -41,10 +33,7 @@
 }
 
 .visit {
-    background-color: $border-primary-color;
-    display: flex;
-    gap: 95px;
-    padding: 36px;
+    @include bonus-section-layout;
 
     &__wrap {
         display: flex;
@@ -53,21 +42,13 @@
         gap: 107px;
     }
     &__info {
-        display: flex;
-        flex-direction: column;
-        gap: $gap-medium;
+        @include flex-column-med;
     }
     &__title {
-        font-size: $font-size-large;
-        font-weight: $font-weight-large;
-        color: $color-secondary;
+        @include bonus-section-title;
     }
     &__description {
-        font-size: $font-size;
-        font-weight: $font-weight;
-        color: $color-secondary;
-        width: 140px;
-        line-height: $line-height;
+        @include bonus-section-desc;
     }
 
     &__btn {
